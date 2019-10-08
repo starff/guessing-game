@@ -1,8 +1,8 @@
 class GuessingGame { // все через this
     constructor(first,second,target) {
-      this.first = first;
-      this.second = second;
-      this.target = target;
+      this.first;
+      this.second;
+      this.target;
     }
   
     setRange(first, second) {
@@ -11,7 +11,7 @@ class GuessingGame { // все через this
     }
   
     guess() {
-      this.target = Math.round((this.first + this.second) / 2);
+      this.target = Math.ceil((this.first + this.second) / 2);
       return this.target;
     }
   
