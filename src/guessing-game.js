@@ -16,15 +16,14 @@ class GuessingGame { // все через this
     }
   
     lower() {
-      this.second = this.target - 1;
+      this.second = this.target;
     //   return this.second;
     }
   
     greater() {
-      this.first = this.target + 1;
+      this.first = this.target;
     //   return this.first;
     }
-  };
-  
+  }; //отличие от стандарного алгоритма в том что мы не проверяем выбранное число, а мы проходим по всем вызовам методов, и должны получить на выходе число равное загаданному.
   module.exports = GuessingGame;
 
